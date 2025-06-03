@@ -1038,9 +1038,8 @@ async function startBot() {
     await initializeBot();
     console.log('✅ Bot initialized, setting commands...');
     await bot.telegram.setMyCommands([
-      { command: 'start', description: '🚀 Запустить бота / Выбрать ранг' },
-      // { command: 'settings', description: '⚙️ Настройки (если будут)' },
-      // { command: 'help', description: '❓ Помощь' },
+      { command: 'start', description: 'Запустить бота' },
+      { command: 'menu', description: '📖 Показать главное меню' },
     ]);
     console.log('✅ Bot commands set successfully.');
 
